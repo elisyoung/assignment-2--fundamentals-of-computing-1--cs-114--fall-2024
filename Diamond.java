@@ -4,9 +4,12 @@ public class Diamond {
   public static void main(String[] args) {
     int userInput;
     boolean valueIsOdd;
+
+    //get a value from the user
     Scanner input = new Scanner(System.in);
-    System.out.println("Enter a number:");
+    System.out.print("Enter a number: ");
     userInput = input.nextInt();
+    System.out.println();
 
     //determine if even or odd
     if(userInput % 2 == 1){
@@ -22,7 +25,7 @@ public class Diamond {
         int spacesInThisRow = (userInput / 2) - currentRow;
         int asterisksInThisRow = 1 + (2 * currentRow);
 
-        for(int spaces = spacesInThisRow; spaces>0; spaces--){
+        for(int spaces = 1; spaces <= spacesInThisRow; spaces++){
           System.out.print(" ");
         }
 

@@ -15,8 +15,22 @@ public class Diamond {
       valueIsOdd = false;
     }
 
-    for(int spaces = (userInput / 2); spaces>0; spaces--){
-      System.out.println("*");
+    //print top half of diamond
+    for(int currentRow = 0; currentRow <= userInput/2; currentRow++){
+
+      int spacesInThisRow = (userInput / 2) - currentRow;
+      int asterisksInThisRow = 1 + (2 * currentRow);
+
+      for(int spaces = spacesInThisRow; spaces>0; spaces--){
+        System.out.print(" ");
+      }
+
+      for(int asterisks = 1; asterisks <= asterisksInThisRow; asterisks++){
+        System.out.print("*");
+      };
+
+      System.out.println();
+
     }
 
 

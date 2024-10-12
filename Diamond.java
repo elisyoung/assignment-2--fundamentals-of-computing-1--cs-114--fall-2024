@@ -37,7 +37,7 @@ public class Diamond {
       }
 
       //print bottom half of odd diamond
-      for(int currentRow = (userInput / 2 + 1); currentRow <= (userInput - 1); currentRow++){
+      for(int currentRow = (userInput / 2 + 1); currentRow < userInput; currentRow++){
 
         int spacesInThisRow = currentRow - (userInput / 2);
         int asterisksInThisRow = userInput - (2 * (currentRow - (userInput / 2)));
@@ -58,13 +58,14 @@ public class Diamond {
       for(int spacesInTheFirstLine = 1; spacesInTheFirstLine < userInput; spacesInTheFirstLine++){
         System.out.print(" ");
       }
+
       System.out.println("*");
 
       //print top half of even diamond
-      for(int currentRow = 1; currentRow <= userInput / 2; currentRow++){
+      for(int currentRow = 1; currentRow <= (userInput / 2); currentRow++){
 
-        int spacesInThisRow = ((userInput / 2) - currentRow) * 2;
-        int asterisksInThisRow = currentRow * 2;
+        int spacesInThisRow = 2 * ((userInput / 2) - currentRow);
+        int asterisksInThisRow = 2 * currentRow;
 
         for(int spaces = 1; spaces <= spacesInThisRow; spaces++){
           System.out.print(" ");
@@ -79,6 +80,7 @@ public class Diamond {
 
       //print bottom half of even diamond
       for(int currentRow = ((userInput / 2) + 1); currentRow < userInput; currentRow++){
+
         int spacesInThisRow = 2 * (currentRow - (userInput / 2));
         int asterisksInThisRow = 2 * (userInput - currentRow);
 

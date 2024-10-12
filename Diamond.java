@@ -76,6 +76,20 @@ public class Diamond {
       }
 
       //print bottom half of even diamond
+      for(int currentRow = ((userInput / 2) + 1); currentRow < userInput; currentRow++){
+        int spacesInThisRow = 2 * (currentRow - (userInput / 2));
+        int asterisksInThisRow = 2 * (userInput - currentRow);
+
+        for(int spaces = 1; spaces <= spacesInThisRow; spaces++){
+          System.out.print(" ");
+        }
+
+        for(int asterisks = 1; asterisks <= asterisksInThisRow; asterisks++){
+          System.out.print("* ");
+        }
+
+        System.out.println();
+      }
 
       //print the last asterisk of even diamond
     }

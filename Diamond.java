@@ -51,9 +51,8 @@ public class Diamond {
       }
 
     } else {
-      System.out.println("this value is even");
       //print the first asterisk of even diamond
-      for(int spacesInTheFirstLine = userInput - 1; spacesInTheFirstLine > 0; spacesInTheFirstLine--){
+      for(int spacesInTheFirstLine = 1; spacesInTheFirstLine < userInput; spacesInTheFirstLine++){
         System.out.print(" ");
       }
       System.out.println("*");
@@ -92,8 +91,11 @@ public class Diamond {
       }
 
       //print the last asterisk of even diamond
+      for(int spacesInTheLastLine = 1; spacesInTheLastLine < userInput; spacesInTheLastLine++){
+        System.out.print(" ");
+      }
+
+      System.out.println("*");
     }
-
-
   }
 }

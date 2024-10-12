@@ -39,7 +39,7 @@ public class Diamond {
         int spacesInThisRow = currentRow - (userInput / 2);
         int asterisksInThisRow = userInput - (2 * (currentRow - (userInput / 2)));
 
-        for(int spaces = spacesInThisRow; spaces>0; spaces--){
+        for(int spaces = 1; spaces <= spacesInThisRow; spaces++){
           System.out.print(" ");
         }
 

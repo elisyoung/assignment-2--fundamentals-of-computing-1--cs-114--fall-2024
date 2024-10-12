@@ -8,13 +8,16 @@ public class Diamond {
     System.out.println("Enter a number:");
     userInput = input.nextInt();
 
+    //determine if even or odd
     if(userInput % 2 == 1){
       valueIsOdd = true;
     } else {
       valueIsOdd = false;
     }
 
-    System.out.println(valueIsOdd);
+    for(int spaces = (userInput / 2); spaces>0; spaces--){
+      System.out.println("*");
+    }
 
 
   }

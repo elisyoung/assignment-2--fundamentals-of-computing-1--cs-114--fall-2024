@@ -9,6 +9,7 @@ public class Diamond {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter a number: ");
     userInput = input.nextInt();
+    input.close();
     System.out.println();
 
     //determine if even or odd

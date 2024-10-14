@@ -48,7 +48,7 @@ public class Diamond {
 
         for(int asterisks = 1; asterisks <= asterisksInThisRow; asterisks++){
           System.out.print("*");
-        };
+        }
 
         System.out.println();
       }
